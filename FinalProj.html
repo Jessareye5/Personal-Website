@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Final Project</title>
+</head>
+<body>
+  <nav>
+    <div class="nav__content">
+      <div class="logo"><a href="#home">Jessa</a></div>
+      <label for="check" class="checkbox">
+        <i class="ri-menu-line"></i>
+      </label>
+      <input type="checkbox" name="check" id="check" />
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section" id="home">
+    <div class="section__container">
+      <div class="content">
+        <p class="subtitle">HELLO</p>
+        <h1 class="title">I'm <span>Jessa<br /></span> Web Developer</h1>
+        <p class="description">Welcome to my very first personal website!</p>
+        <div class="action__btns">
+          <button class="projects" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">Projects</button>
+        </div>
+      </div>
+      <div class="image">
+        <img src="main.png" alt="profile" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section__container">
+      <div class="content">
+        <h2 class="title">About This Project</h2>
+        <p class="description">
+          This website is my final project for the ITEC50 course as a first-year Computer Science student at CVSU-Bacoor. It represents my first attempt at building a personal portfolio from scratch.
+        </p>
+        <p class="description"><strong>Technologies Used:</strong> HTML & CSS</p>
+        <p class="description"><strong>Purpose:</strong> To showcase my skills and projects in a clean and simple personal website layout. I created this site to practice my knowledge in web development and build a foundation for future portfolio enhancements.</p>
+      </div>
+      <div class="image">
+        <img src="CvSU.png" alt="about" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section__container center-content">
+      <div class="project-header">
+        <h2 class="title">Projects</h2>
+        <p class="description">Here are some of my sample projects.</p>
+      </div>
+
+      <div class="projects-grid horizontal-scroll">
+        <div class="project-card">
+          <img src="calculator-demo.png" alt="Calculator Demo" class="project-image" />
+          <h3>Simple Calculator</h3>
+          <p>A basic calculator built with Python.</p>
+          <p><strong>Technologies:</strong> Python</p>
+          <a href="https://github.com/Jessareye5/Simple-Calculator" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="atm-demo.png" alt="ATM Demo" class="project-image" />
+          <h3>ATM Machine</h3>
+          <p>A simulated ATM interface created using Java.</p>
+          <p><strong>Technologies:</strong> Java</p>
+          <a href="https://github.com/Jessareye5/ATM" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
+          <img src="thermometer-demo.png" alt="Thermometer Demo" class="project-image" />
+          <h3>Thermometer App</h3>
+          <p>A digital thermometer project made with C#.</p>
+          <p><strong>Technologies:</strong> C#</p>
+          <a href="https://github.com/Jessareye5/Thermometer" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+  <div class="section__container">
+    <div class="content">
+      <h2 class="title">Contact Me</h2>
+      <p class="description">Feel free to reach out via this form or my social channels.</p>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="projects">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> jessareyes726@gmail.com</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/14GXjvSPpcG/" target="_blank"><i class="ri-facebook-fill"></i></a>
+          <a href="https://github.com/Jessareye5" target="_blank"><i class="ri-github-fill"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
